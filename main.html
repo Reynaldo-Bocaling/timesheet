@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Time Tracker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		function updateRemainingHours(action) {
+			var username = $('#username').val();
+			var password = $('#password').val();
+			$.ajax({
+				type: 'POST',
+				url: 'update_hours.php',
+				data: {
+					username: username,
+					password: password,
+					action: action
+				},
+				success: function(response) {
+					$('#remaining-hours').text(response);
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<h1>Time Tracker</h1>
+	<div>
+		<p>Username: <input type="text" id="username"></p>
+		<p>Password: <input type="password" id="password"></p>
+		<p>Remaining Hours: <span id="remaining-hours"><?php echo $remaining_hours; ?></span></p>
+	</div>
+	<button onclick="updateRemainingHours('login')">Log In</button>
+	<button onclick="updateRemainingHours('logout')">Log Out</button>
+</body>
+</html> -->
